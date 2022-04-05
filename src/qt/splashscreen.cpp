@@ -27,6 +27,8 @@
 #include <QDesktopWidget>
 #include <QPainter>
 
+#include <boost/bind.hpp>
+
 SplashScreen::SplashScreen(interfaces::Node& node, Qt::WindowFlags f, const NetworkStyle *networkStyle) :
     QWidget(0, f), curAlignment(0), m_node(node)
 {
